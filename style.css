@@ -26,6 +26,8 @@
     width: 100%;
     z-index: 1;
     background-color: white;
+    border-bottom: solid;
+    border-width: 2px;
 }
 .menu img{
     width: 15px;
@@ -36,12 +38,16 @@
     background-color: white;
 }
 .intro{
-    background-image: url('resources/banner-landingpage.jpg');
+    /*background-image: url('resources/banner-landingpage.jpg');*/
+    background-image: url("https://merchandising-assets.bestbuy.ca/bltc8653f66842bff7f/blt68ce388037c08a03/5e7180454d9f7942b286ded4/computing-20191029-feature-cameras-and-camcorders-orientation-s.jpg?width=2877&quality=80");
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
     position: relative;
     margin-top: 65px;
+    border-bottom: solid;
+    border-width: 2px;
+   
     
 }
 .details{
@@ -88,21 +94,29 @@
 /*2 tấm hình*/
 .show{
     display: grid;
-    grid-template-columns: repeat(1fr 1fr);
-    grid-template-rows: auto;
-    margin-left: 50px;
-    margin-top: 50px;
+    grid-template-columns: 1fr 30px 1fr;
+    margin: 50px 50px 50px 50px;
+    justify-content: center;
+    align-content: center;
+
 }
 .show1{
     grid-column: 1/ span 1;
     background-color: white;
-    margin-right: 50px;
-    height: 500px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-top: 70px;
+    padding-bottom: 50px;
+}
+.show1 img{
+    width: 390px;
+    height: 300px;
+    align-self: center;
 }
 .show1 p{
+    padding-top: 10px;
     text-align: center;
     font-size: 30px;
     background-color: white;
@@ -113,21 +127,19 @@
     background-color: white;
     font-style:normal;
 }
-.show1 img{
-   width: 390px;
-   height: 285px;
-}
+
 .show2{
-    grid-column: 2/span 1;
+    grid-column: 3/span 1;
     background-color: white;
-    margin-right: 50px;
-    height: 500px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 50px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-top: 40px;
+    padding-bottom: 50px;
 }
 .show2 p{
+    padding-top: 10px;
     text-align: center;
     font-size: 30px;
     background-color: white;
@@ -140,7 +152,8 @@
 }
 .show2 img{
     width: 390px;
-    height: 285px;
+    height: 300px;
+    align-self: center;
  }
 .text{
     text-align: center;
@@ -150,20 +163,25 @@
     margin-top: 30px;
 }
 .bot .text, .bot span ,.bot .container{
-    background-color: grey;
+    background-color: #d5f35f;
 }
 .text span{
     font-weight: 300;
     font-size: 25px;
 }
 .container{
-    padding-left: 8px;
-    background-color: grey;
+    padding-top: 20px;
+    background: linear-gradient(45deg , rgb(249, 249, 255) ,#b5d33d);
     padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
 }
 .container img{
     width: 290px;
-    height: 270px;
+    height: auto;
+    margin-right: 20px;
     
 }
 /*Main*/
